@@ -40,78 +40,149 @@
             <img src="{{ asset('images/imagem-home-2.jpg') }}" class="img-fluid rounded-bottom-4" alt="imagem-topbar">
         </div>
 
-        <main class="flex-row m-3">
-            <span class="m-1 fs-2">Bebidas</span>
-            <div class="d-flex justify-content-start bg-light border rounded-2 mb-3" style="max-height: 350px">
-                <div class="d-flex flex-column align-items-start p-2 item m-4">
-                    <img src="https://brf.file.force.com/servlet/servlet.ImageServer?id=015U600000027Gj&oid=00D410000012TJa&lastMod=1703778094000"
-                        class="img-fluid rounded" style="max-width: 200px;" alt="maca-img">
-                    <div class="mt-3" style="max-width: 200px">
-                        <span class="fw-bold" style="color:green">R$ 10,50</span>
-                        <p class="text-truncate">Cola-Cola 2L Sabor Tradicional</p>
+        <main class="flex-row m-2">
+            <div class="position-relative">
+                <!-- Botões de navegação -->
+                <button class="btn btn-light position-absolute top-50 start-0 translate-middle-y z-3" id="scrollLeft">
+                    &lt;
+                </button>
+                <button class="btn btn-light position-absolute top-50 end-0 translate-middle-y z-3" id="scrollRight">
+                    &gt;
+                </button>
+
+                <span class="m-1 fs-2">Bebidas</span>
+                <div class="d-flex justify-content-center bg-light border rounded-2 mb-3 overflow-auto"
+                    style="max-height: 350px overflow-y: hidden; scrollbar-width: none;" id="produtoScroll">
+                    <div class="d-flex flex-column align-items-start p-2 item m-3">
+                        <img src="https://brf.file.force.com/servlet/servlet.ImageServer?id=015U600000027Gj&oid=00D410000012TJa&lastMod=1703778094000"
+                            class="img-fluid rounded mt-1 product-img" style="max-width: 200px;" alt="maca-img">
+                        <div class="mt-3" style="max-width: 200px">
+                            <span class="fw-bold" style="color:green">R$ 10,50</span>
+                            <p class="text-truncate">Cola-Cola 2L Sabor Tradicional</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column align-items-start p-2 item m-3">
+                        <img src="https://brf.file.force.com/servlet/servlet.ImageServer?id=015U600000027Gj&oid=00D410000012TJa&lastMod=1703778094000"
+                            class="img-fluid rounded mt-1 product-img" style="max-width: 200px;" alt="maca-img">
+                        <div class="mt-3" style="max-width: 200px">
+                            <span class="fw-bold" style="color:green">R$ 10,50</span>
+                            <p class="text-truncate">Cola-Cola 2L Sabor Tradicional</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column align-items-start p-2 item m-3">
+                        <img src="https://brf.file.force.com/servlet/servlet.ImageServer?id=015U600000027Gj&oid=00D410000012TJa&lastMod=1703778094000"
+                            class="img-fluid rounded mt-1 product-img" style="max-width: 200px;" alt="maca-img">
+                        <div class="mt-3" style="max-width: 200px">
+                            <span class="fw-bold" style="color:green">R$ 10,50</span>
+                            <p class="text-truncate">Cola-Cola 2L Sabor Tradicional</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column align-items-start p-2 item m-3">
+                        <img src="https://brf.file.force.com/servlet/servlet.ImageServer?id=015U600000027Gj&oid=00D410000012TJa&lastMod=1703778094000"
+                            class="img-fluid rounded mt-1 product-img" style="max-width: 200px;" alt="maca-img">
+                        <div class="mt-3" style="max-width: 200px">
+                            <span class="fw-bold" style="color:green">R$ 10,50</span>
+                            <p class="text-truncate">Cola-Cola 2L Sabor Tradicional</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column align-items-start p-2 item m-3">
+                        <img src="https://brf.file.force.com/servlet/servlet.ImageServer?id=015U600000027Gj&oid=00D410000012TJa&lastMod=1703778094000"
+                            class="img-fluid rounded mt-1 product-img" style="max-width: 200px;" alt="maca-img">
+                        <div class="mt-3" style="max-width: 200px">
+                            <span class="fw-bold" style="color:green">R$ 10,50</span>
+                            <p class="text-truncate">Cola-Cola 2L Sabor Tradicional</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column align-items-start p-2 item m-3">
+                        <img src="https://brf.file.force.com/servlet/servlet.ImageServer?id=015U600000027Gj&oid=00D410000012TJa&lastMod=1703778094000"
+                            class="img-fluid rounded mt-1 product-img" style="max-width: 200px;" alt="maca-img">
+                        <div class="mt-3" style="max-width: 200px">
+                            <span class="fw-bold" style="color:green">R$ 10,50</span>
+                            <p class="text-truncate">Cola-Cola 2L Sabor Tradicional</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column align-items-start p-2 item m-3">
+                        <img src="https://brf.file.force.com/servlet/servlet.ImageServer?id=015U600000027Gj&oid=00D410000012TJa&lastMod=1703778094000"
+                            class="img-fluid rounded mt-1 product-img" style="max-width: 200px;" alt="maca-img">
+                        <div class="mt-3" style="max-width: 200px">
+                            <span class="fw-bold" style="color:green">R$ 10,50</span>
+                            <p class="text-truncate">Cola-Cola 2L Sabor Tradicional</p>
+                        </div>
                     </div>
                 </div>
-                <div class="d-flex flex-column align-items-start p-2 item m-4">
-                    <img src="https://brf.file.force.com/servlet/servlet.ImageServer?id=015U600000027Gj&oid=00D410000012TJa&lastMod=1703778094000"
-                        class="img-fluid rounded" style="max-width: 200px;" alt="maca-img">
-                    <div class="mt-3" style="max-width: 200px">
-                        <span class="fw-bold" style="color:green">R$ 10,50</span>
-                        <p class="text-truncate">Cola-Cola 2L Sabor Tradicional</p>
+            </div>
+            <div class="position-relative">
+                <!-- Botões de navegação -->
+                <button class="btn btn-light position-absolute top-50 start-0 translate-middle-y z-3" id="scrollLeft">
+                    &lt;
+                </button>
+                <button class="btn btn-light position-absolute top-50 end-0 translate-middle-y z-3" id="scrollRight">
+                    &gt;
+                </button>
+
+                <span class="m-1 fs-2">Alimentos</span>
+                <div class="d-flex justify-content-center bg-light border rounded-2 mb-3 overflow-auto"
+                    style="max-height: 350px overflow-y: hidden; scrollbar-width: none;" id="produtoScroll">
+                    <div class="d-flex flex-column align-items-start p-2 item m-3">
+                        <img src="https://brf.file.force.com/servlet/servlet.ImageServer?id=015U600000027Gj&oid=00D410000012TJa&lastMod=1703778094000"
+                            class="img-fluid rounded mt-1 product-img" style="max-width: 200px;" alt="maca-img">
+                        <div class="mt-3" style="max-width: 200px">
+                            <span class="fw-bold" style="color:green">R$ 10,50</span>
+                            <p class="text-truncate">Cola-Cola 2L Sabor Tradicional</p>
+                        </div>
                     </div>
-                </div>
-                <div class="d-flex flex-column align-items-start p-2 item m-4">
-                    <img src="https://brf.file.force.com/servlet/servlet.ImageServer?id=015U600000027Gj&oid=00D410000012TJa&lastMod=1703778094000"
-                        class="img-fluid rounded" style="max-width: 200px;" alt="maca-img">
-                    <div class="mt-3" style="max-width: 200px">
-                        <span class="fw-bold" style="color:green">R$ 10,50</span>
-                        <p class="text-truncate">Cola-Cola 2L Sabor Tradicional</p>
+                    <div class="d-flex flex-column align-items-start p-2 item m-3">
+                        <img src="https://brf.file.force.com/servlet/servlet.ImageServer?id=015U600000027Gj&oid=00D410000012TJa&lastMod=1703778094000"
+                            class="img-fluid rounded mt-1 product-img" style="max-width: 200px;" alt="maca-img">
+                        <div class="mt-3" style="max-width: 200px">
+                            <span class="fw-bold" style="color:green">R$ 10,50</span>
+                            <p class="text-truncate">Cola-Cola 2L Sabor Tradicional</p>
+                        </div>
                     </div>
-                </div>
-                <div class="d-flex flex-column align-items-start p-2 item m-4">
-                    <img src="https://brf.file.force.com/servlet/servlet.ImageServer?id=015U600000027Gj&oid=00D410000012TJa&lastMod=1703778094000"
-                        class="img-fluid rounded" style="max-width: 200px;" alt="maca-img">
-                    <div class="mt-3" style="max-width: 200px">
-                        <span class="fw-bold" style="color:green">R$ 10,50</span>
-                        <p class="text-truncate">Cola-Cola 2L Sabor Tradicional</p>
+                    <div class="d-flex flex-column align-items-start p-2 item m-3">
+                        <img src="https://brf.file.force.com/servlet/servlet.ImageServer?id=015U600000027Gj&oid=00D410000012TJa&lastMod=1703778094000"
+                            class="img-fluid rounded mt-1 product-img" style="max-width: 200px;" alt="maca-img">
+                        <div class="mt-3" style="max-width: 200px">
+                            <span class="fw-bold" style="color:green">R$ 10,50</span>
+                            <p class="text-truncate">Cola-Cola 2L Sabor Tradicional</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column align-items-start p-2 item m-3">
+                        <img src="https://brf.file.force.com/servlet/servlet.ImageServer?id=015U600000027Gj&oid=00D410000012TJa&lastMod=1703778094000"
+                            class="img-fluid rounded mt-1 product-img" style="max-width: 200px;" alt="maca-img">
+                        <div class="mt-3" style="max-width: 200px">
+                            <span class="fw-bold" style="color:green">R$ 10,50</span>
+                            <p class="text-truncate">Cola-Cola 2L Sabor Tradicional</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column align-items-start p-2 item m-3">
+                        <img src="https://brf.file.force.com/servlet/servlet.ImageServer?id=015U600000027Gj&oid=00D410000012TJa&lastMod=1703778094000"
+                            class="img-fluid rounded mt-1 product-img" style="max-width: 200px;" alt="maca-img">
+                        <div class="mt-3" style="max-width: 200px">
+                            <span class="fw-bold" style="color:green">R$ 10,50</span>
+                            <p class="text-truncate">Cola-Cola 2L Sabor Tradicional</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column align-items-start p-2 item m-3">
+                        <img src="https://brf.file.force.com/servlet/servlet.ImageServer?id=015U600000027Gj&oid=00D410000012TJa&lastMod=1703778094000"
+                            class="img-fluid rounded mt-1 product-img" style="max-width: 200px;" alt="maca-img">
+                        <div class="mt-3" style="max-width: 200px">
+                            <span class="fw-bold" style="color:green">R$ 10,50</span>
+                            <p class="text-truncate">Cola-Cola 2L Sabor Tradicional</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column align-items-start p-2 item m-3">
+                        <img src="https://brf.file.force.com/servlet/servlet.ImageServer?id=015U600000027Gj&oid=00D410000012TJa&lastMod=1703778094000"
+                            class="img-fluid rounded mt-1 product-img" style="max-width: 200px;" alt="maca-img">
+                        <div class="mt-3" style="max-width: 200px">
+                            <span class="fw-bold" style="color:green">R$ 10,50</span>
+                            <p class="text-truncate">Cola-Cola 2L Sabor Tradicional</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <span class="m-1 fs-2">Alimentos</span>
-            <div class="d-flex justify-content-start bg-light border rounded-2 mb-3" style="max-height: 350px">
-                <div class="d-flex flex-column align-items-start p-2 item m-4">
-                    <img src="https://brf.file.force.com/servlet/servlet.ImageServer?id=015U600000027Gj&oid=00D410000012TJa&lastMod=1703778094000"
-                        class="img-fluid rounded" style="max-width: 200px;" alt="maca-img">
-                    <div class="mt-3" style="max-width: 200px">
-                        <span class="fw-bold" style="color:green">R$ 10,50</span>
-                        <p class="text-truncate">Cola-Cola 2L Sabor Tradicional</p>
-                    </div>
-                </div>
-                <div class="d-flex flex-column align-items-start p-2 item m-4">
-                    <img src="https://brf.file.force.com/servlet/servlet.ImageServer?id=015U600000027Gj&oid=00D410000012TJa&lastMod=1703778094000"
-                        class="img-fluid rounded" style="max-width: 200px;" alt="maca-img">
-                    <div class="mt-3" style="max-width: 200px">
-                        <span class="fw-bold" style="color:green">R$ 10,50</span>
-                        <p class="text-truncate">Cola-Cola 2L Sabor Tradicional</p>
-                    </div>
-                </div>
-                <div class="d-flex flex-column align-items-start p-2 item m-4">
-                    <img src="https://brf.file.force.com/servlet/servlet.ImageServer?id=015U600000027Gj&oid=00D410000012TJa&lastMod=1703778094000"
-                        class="img-fluid rounded" style="max-width: 200px;" alt="maca-img">
-                    <div class="mt-3" style="max-width: 200px">
-                        <span class="fw-bold" style="color:green">R$ 10,50</span>
-                        <p class="text-truncate">Cola-Cola 2L Sabor Tradicional</p>
-                    </div>
-                </div>
-                <div class="d-flex flex-column align-items-start p-2 item m-4">
-                    <img src="https://brf.file.force.com/servlet/servlet.ImageServer?id=015U600000027Gj&oid=00D410000012TJa&lastMod=1703778094000"
-                        class="img-fluid rounded" style="max-width: 200px;" alt="maca-img">
-                    <div class="mt-3" style="max-width: 200px">
-                        <span class="fw-bold" style="color:green">R$ 10,50</span>
-                        <p class="text-truncate">Cola-Cola 2L Sabor Tradicional</p>
-                    </div>
-                </div>
-            </div>
+
 
         </main>
     </div>

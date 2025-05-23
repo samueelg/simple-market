@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Simple Market</title>
     @vite(['resources/js/app.js'])
+    @vite(['resources/css/app.css'])
 </head>
 <body>
     @yield('content')

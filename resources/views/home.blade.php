@@ -37,20 +37,34 @@
             </div>
         </nav>
         <div>
-            <img src="{{ asset('images/imagem-home-2.jpg') }}" class="img-fluid rounded-bottom-4" alt="imagem-topbar">
+            <img src="{{ asset('images/home/imagem-home-2.jpg') }}" class="img-fluid mb-5 rounded-bottom-4" alt="imagem-topbar">
         </div>
 
-        <main class="flex-row m-2">
+        <main class="flex-row m-4">
+            <div class = "d-flex justify-content-between mb-5">
+                <img src="{{ asset('images/sections/sessao-bebidas.png') }}"
+                    class="img-fluid rounded border mt-1 product-img" style="max-width: 400px;" alt="">
+                <img src="{{ asset('images/sections/sessao-alimentos.png') }}"
+                    class="img-fluid rounded border mt-1 product-img" style="max-width: 400px;" alt="">
+                <img src="{{ asset('images/sections/sessao-hortifruti.png') }}"
+                    class="img-fluid rounded border mt-1 product-img" style="max-width: 400px;" alt="">
+            </div>
+
+            <div class="d-flex-inline m-1 justify-content-start ">
+                <span class="m-1 fs-3 p-3">Bebidas</span>
+                <span class="m-1 fs-3 p-3">Alimentos</span>
+                <span class="m-1 fs-3 p-3">Limpeza</span>
+            </div>
+
             <div class="position-relative">
                 <!-- Botões de navegação -->
-                <button class="btn btn-light position-absolute top-50 start-0 translate-middle-y z-3" id="scrollLeft">
+                <button class="btn btn-light position-absolute top-50 start-0 translate-middle-y z-3 border"
+                    id="scrollLeft">
                     &lt;
                 </button>
-                <button class="btn btn-light position-absolute top-50 end-0 translate-middle-y z-3" id="scrollRight">
+                <button class="btn btn-light position-absolute top-50 end-0 translate-middle-y z-3 border" id="scrollRight">
                     &gt;
                 </button>
-
-                <span class="m-1 fs-2">Bebidas</span>
                 <div class="d-flex justify-content-center bg-light border rounded-2 mb-3 overflow-auto"
                     style="max-height: 350px overflow-y: hidden; scrollbar-width: none;" id="produtoScroll">
                     @foreach ($products as $product)
@@ -58,29 +72,15 @@
                     @endforeach
                 </div>
             </div>
-            <div class="position-relative">
-                <!-- Botões de navegação -->
-                <button class="btn btn-light position-absolute top-50 start-0 translate-middle-y z-3" id="scrollLeft">
-                    &lt;
-                </button>
-                <button class="btn btn-light position-absolute top-50 end-0 translate-middle-y z-3" id="scrollRight">
-                    &gt;
-                </button>
 
-                <span class="m-1 fs-2">Alimentos</span>
-                <div class="d-flex justify-content-center bg-light border rounded-2 mb-3 overflow-auto"
-                    style="max-height: 350px overflow-y: hidden; scrollbar-width: none;" id="produtoScroll">
-                    <div class="d-flex flex-column align-items-start p-2 item m-3">
-                        <img src="https://brf.file.force.com/servlet/servlet.ImageServer?id=015U600000027Gj&oid=00D410000012TJa&lastMod=1703778094000"
-                            class="img-fluid rounded mt-1 product-img" style="max-width: 200px;" alt="maca-img">
-                        <div class="mt-3" style="max-width: 200px">
-                            <span class="fw-bold" style="color:green">R$ 10,50</span>
-                            <p class="text-truncate">Cola-Cola 2L Sabor Tradicional</p>
-                        </div>
-                    </div>
-                </div>
+            <div class = "d-flex justify-content-around mb-4">
+                <img src="https://img.freepik.com/fotos-premium/negocios-com-desconto-de-75_557469-9314.jpg?semt=ais_hybrid&w=740"
+                    class="img-fluid rounded border mt-1 product-img" style="max-width: 200px;" alt="">
+                <img src="https://img.freepik.com/fotos-premium/negocios-com-desconto-de-75_557469-9314.jpg?semt=ais_hybrid&w=740"
+                    class="img-fluid rounded border mt-1 product-img" style="max-width: 200px;" alt="">
+                <img src="https://img.freepik.com/fotos-premium/negocios-com-desconto-de-75_557469-9314.jpg?semt=ais_hybrid&w=740"
+                    class="img-fluid rounded border mt-1 product-img" style="max-width: 200px;" alt="">
             </div>
-
 
 
         </main>

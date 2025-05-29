@@ -24,7 +24,7 @@
 
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                                     class="bi bi-person" viewBox="0 0 16 16">
                                     <path
@@ -36,8 +36,12 @@
                 </div>
             </div>
         </nav>
+
+        @include('auth.login_modal')
+
         <div>
-            <img src="{{ asset('images/home/imagem-home-2.jpg') }}" class="img-fluid mb-5 rounded-bottom-4" alt="imagem-topbar">
+            <img src="{{ asset('images/home/simple-home.png') }}" class="img-fluid mb-5 rounded-bottom-3"
+                alt="imagem-topbar">
         </div>
 
         <main class="flex-row m-4">
@@ -65,7 +69,7 @@
                 <button class="btn btn-light position-absolute top-50 end-0 translate-middle-y z-3 border" id="scrollRight">
                     &gt;
                 </button>
-                <div class="d-flex justify-content-center bg-light border rounded-2 mb-3 overflow-auto"
+                <div class="d-flex justify-content-start bg-light border rounded-2 mb-3 overflow-auto"
                     style="max-height: 350px overflow-y: hidden; scrollbar-width: none;" id="produtoScroll">
                     @foreach ($products as $product)
                         @include('product_on_section')

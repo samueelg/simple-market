@@ -16,7 +16,7 @@ class MainController extends Controller
         return view('home', compact('products'));
     }
 
-    public function login(){
-        return view('register');
+    public function register(){
+        return view('auth.register');
     }
 }

@@ -77,14 +77,7 @@
                 </div>
             </div>
 
-            <div class = "d-flex justify-content-around mb-4">
-                <img src="https://img.freepik.com/fotos-premium/negocios-com-desconto-de-75_557469-9314.jpg?semt=ais_hybrid&w=740"
-                    class="img-fluid rounded border mt-1 product-img" style="max-width: 200px;" alt="">
-                <img src="https://img.freepik.com/fotos-premium/negocios-com-desconto-de-75_557469-9314.jpg?semt=ais_hybrid&w=740"
-                    class="img-fluid rounded border mt-1 product-img" style="max-width: 200px;" alt="">
-                <img src="https://img.freepik.com/fotos-premium/negocios-com-desconto-de-75_557469-9314.jpg?semt=ais_hybrid&w=740"
-                    class="img-fluid rounded border mt-1 product-img" style="max-width: 200px;" alt="">
-            </div>
+
 
 
         </main>
